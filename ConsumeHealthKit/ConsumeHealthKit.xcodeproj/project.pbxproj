@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF1889062220CC6700D120A9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1889052220CC6700D120A9 /* HealthKit.framework */; };
+		AF18890C2220D07D00D120A9 /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18890B2220D07D00D120A9 /* HealthKitService.swift */; };
 		AF53FE8C221FA0D000B586D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53FE8B221FA0D000B586D7 /* AppDelegate.swift */; };
 		AF53FE8E221FA0D000B586D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53FE8D221FA0D000B586D7 /* ViewController.swift */; };
 		AF53FE91221FA0D000B586D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF53FE8F221FA0D000B586D7 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		AF1889052220CC6700D120A9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		AF1889072220CC6700D120A9 /* ConsumeHealthKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConsumeHealthKit.entitlements; sourceTree = "<group>"; };
+		AF18890B2220D07D00D120A9 /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
 		AF53FE88221FA0D000B586D7 /* ConsumeHealthKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConsumeHealthKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF53FE8B221FA0D000B586D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF53FE8D221FA0D000B586D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AF1889092220D05C00D120A9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AF18890B2220D07D00D120A9 /* HealthKitService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AF18890A2220D06500D120A9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF53FE8D221FA0D000B586D7 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		AF53FE7F221FA0D000B586D7 = {
 			isa = PBXGroup;
 			children = (
@@ -67,9 +85,10 @@
 		AF53FE8A221FA0D000B586D7 /* ConsumeHealthKit */ = {
 			isa = PBXGroup;
 			children = (
+				AF18890A2220D06500D120A9 /* ViewControllers */,
+				AF1889092220D05C00D120A9 /* Service */,
 				AF1889072220CC6700D120A9 /* ConsumeHealthKit.entitlements */,
 				AF53FE8B221FA0D000B586D7 /* AppDelegate.swift */,
-				AF53FE8D221FA0D000B586D7 /* ViewController.swift */,
 				AF53FE8F221FA0D000B586D7 /* Main.storyboard */,
 				AF53FE92221FA0D200B586D7 /* Assets.xcassets */,
 				AF53FE94221FA0D200B586D7 /* LaunchScreen.storyboard */,
@@ -156,6 +175,7 @@
 			files = (
 				AF53FE8E221FA0D000B586D7 /* ViewController.swift in Sources */,
 				AF53FE8C221FA0D000B586D7 /* AppDelegate.swift in Sources */,
+				AF18890C2220D07D00D120A9 /* HealthKitService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
